@@ -25,9 +25,9 @@ function App() {
         <Button color='pink' outline size='small'>BUTTON</Button>
       </div>
       <div className="buttons">
-        <Button size='large' fullWidth>BUTTON</Button>
-        <Button size='large' color='gray' fullWidth>BUTTON</Button>
-        <Button size='large' color='pink' fullWidth>BUTTON</Button>
+        <Button onClick={() => console.log('click~!!')} size='large' fullWidth>CLICK</Button>
+        <Button onMouseMove={() => console.log('mouse-move~!!')} size='large' color='gray' fullWidth>MOUSE_MOVE</Button>
+        <Button onClick={() => console.log('click~!!')} size='large' color='pink' fullWidth>CLICK</Button>
       </div>
     </div>
   );
