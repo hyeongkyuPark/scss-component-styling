@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/Button'
+import './app.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="buttons">
+        <Button size='large'>BUTTON</Button>
+        <Button>BUTTON</Button>
+        <Button size='small'>BUTTON</Button>
+      </div>
+      <div className="buttons">
+        <Button color='gray' size='large'>BUTTON</Button>
+        <Button color='gray'>BUTTON</Button>
+        <Button color='gray' size='small'>BUTTON</Button>
+      </div>
+      <div className="buttons">
+        <Button color='pink' size='large'>BUTTON</Button>
+        <Button color='pink'>BUTTON</Button>
+        <Button color='pink' size='small'>BUTTON</Button>
+      </div>
+      <div className="buttons">
+        <Button size='large' outline>BUTTON</Button>
+        <Button color='gray' outline>BUTTON</Button>
+        <Button color='pink' outline size='small'>BUTTON</Button>
+      </div>
+      <div className="buttons">
+        <Button size='large' fullWidth>BUTTON</Button>
+        <Button size='large' color='gray' fullWidth>BUTTON</Button>
+        <Button size='large' color='pink' fullWidth>BUTTON</Button>
+      </div>
     </div>
   );
 }
